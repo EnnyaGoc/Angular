@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL DE NOTICIAS GALACTICA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--defer indica pro navegador q o script tem q ser executado dps dele criar a dom-->
+    <script src="src/Components/CardNews.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -14,10 +16,11 @@
                 <a href="#">Dath Vader Contrata Devs</a>
                 <p>Darth Vader procura desenvolvedores q sabem trabalhar com components</p>
             </div>
-            <div class="carf__right">
+            <div class="card__right">
                 <img src="assets/darth-vader-001.jpg" alt="">
             </div>
         </div>
     </div>
+    <card-news></card-news>
 </body>
 </html>
