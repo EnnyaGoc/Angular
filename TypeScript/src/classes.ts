@@ -27,8 +27,8 @@ class Magician extends Character {
     constructor(
         name: string,
         strength: number, 
-        skill: number
-        this.magicPoints: number   
+        skill: number,
+        magicPoints: number   
     ){
         super(name, strength, skill);
         this.magicPoints = magicPoints;
@@ -37,5 +37,5 @@ class Magician extends Character {
 
 
 const p1 = new Character("ana", 10, 98);
-const p2 = new Magician("mago", 09, 30, 100);
+const p2 = new Magician("mago", 9, 30, 100);
 p1.attack();
