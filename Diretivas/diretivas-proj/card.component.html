@@ -1,7 +1,30 @@
-<h1></h1>
-<app-title nome="produto 1"></app-title>
-<app-title nome="produto 2"></app-title>
-<!-- ngIf verifica se algum conteudo deveria ser exibido-->
-<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
-<button (click)="disposeCheckSample()">Destruir</button>
-<router-outlet></router-outlet>
+<p>card worfks </p>
+<ul>
+    <li *ngFor="let p of produtos; let i = index" (click)="remover(i)"> 
+      {{ i }} - {{ p }}</li>
+    <!-- ngFor percorre os elementos -->
+    <button (click)="adicionar()">adicionar</button>
+</ul>
+<div [ngSwitch]="menuType">
+    <div *ngSwitchCase="'user'">
+        <ul>
+            <li> editar perfil</li>
+            <li> adicionar cartão</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li> editar perfil</li>
+            <li> adicionar cartão</li>
+            <li> gerenciar usuarios</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'superuser'">
+        <ul>
+            <li> editar perfil</li>
+            <li> adicionar cartão</li>
+            <li> gerenciar usuarios</li>
+            <li> gerenciar admins</li>
+        </ul>
+    </div>
+</div>

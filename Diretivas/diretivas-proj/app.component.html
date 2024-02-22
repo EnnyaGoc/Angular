@@ -1,7 +1,8 @@
-<h1></h1>
-<app-title nome="produto 1"></app-title>
-<app-title nome="produto 2"></app-title>
-<!-- ngIf verifica se algum conteudo deveria ser exibido-->
-<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
-<button (click)="disposeCheckSample()">Destruir</button>
+<app-card *ngIf="isAliveCard; else #anotherBlock"></app-card>
+<!-- ngIf condiçao para mostrar ou ano um elemento -->
+
+<ng-template #anotherBlock>
+    <!-- # é pra dar apelido-->
+    <p>ola sou um bloco</p>
+</ng-template>
 <router-outlet></router-outlet>
