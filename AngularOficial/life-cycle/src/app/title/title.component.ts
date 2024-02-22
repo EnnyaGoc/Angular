@@ -6,7 +6,7 @@ import { Component, Input, OnInit, OnChanges } from "@angular/core";
     styleUrls: ['./title.component.css'] 
 })
 export class TitleComponent implements OnInit, OnChanges{
-    @input() nome:string = ''
+    @Input() nome:string = ''
 
     constructor() {
         console.log(`Construtor ${this.nome}`)
