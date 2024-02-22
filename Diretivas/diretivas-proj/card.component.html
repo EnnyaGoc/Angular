@@ -1,0 +1,7 @@
+<h1></h1>
+<app-title nome="produto 1"></app-title>
+<app-title nome="produto 2"></app-title>
+<!-- ngIf verifica se algum conteudo deveria ser exibido-->
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Destruir</button>
+<router-outlet></router-outlet>
