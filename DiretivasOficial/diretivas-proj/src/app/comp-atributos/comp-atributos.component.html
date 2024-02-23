@@ -7,7 +7,7 @@
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
 <input type="text" [(ngModel)]="item">
-<button (click)=""adicionarLista()>ADICIONAR</button>
+<button (click)="adicionarLista()">ADICIONAR</button>
 <p>{{ item }}</p>
 
 <ng-content select="p"></ng-content>
@@ -24,7 +24,7 @@
 
 <ng-content select="p"></ng-content>
 
-<ng-template>
+<ng-template [ngIf]="true">
     <a href="#">ADICIONAR AO CARRINHO</a>
 </ng-template>
 <hr>

@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompAtributosComponent implements OnInit {
 
-  estilo:string="";
-  corFundo:string="blue"
-  corDafonte:string="yellow"
-  item:string=""
+  estilo:string ="disable";
+  corFundo:string ="blue"
+  corDafonte:string ="yellow"
+  item:string =""
   lista:string[] = []
-  isEnableBlock:boolean = true
+  isEnableBlock:boolean = false
   constructor() { }
 
   adicionarLista(){
