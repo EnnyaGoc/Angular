@@ -1,4 +1,5 @@
-<app-card *ngIf="isAliveCard; else #anotherBlock"></app-card>
+<app-comp-atributos></app-comp-atributos>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
 <!-- ngIf condiçao para mostrar ou ano um elemento -->
 
 <ng-template #anotherBlock>
@@ -6,3 +7,4 @@
     <p>ola sou um bloco</p>
 </ng-template>
 <router-outlet></router-outlet>
+
